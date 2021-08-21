@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
-    
+
     'mainapp.apps.MainappConfig'
 ]
 
@@ -103,9 +103,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Minsk'
 
 USE_I18N = True
 
@@ -120,6 +120,9 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
 # Забирать статику из React-а, по адресу 'mainapp-ui/build/static'
 STATICFILES_DIRS = ((BASE_DIR / 'mainapp-ui/build/static'),)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
